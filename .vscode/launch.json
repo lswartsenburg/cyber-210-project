@@ -1,15 +1,24 @@
 {
-  // Use IntelliSense to learn about possible attributes.
-  // Hover to view descriptions of existing attributes.
-  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-  "version": "0.2.0",
   "configurations": [
     {
-      "name": "Python Debugger: Current File",
+      "name": "Zeek Controller",
       "type": "debugpy",
       "request": "launch",
-      "program": "main.py",
-      "console": "integratedTerminal"
-    }
+      "program": "exec.py",
+      "console": "integratedTerminal",
+      "args": "zeek-netcontrol/openflow/controller.py",
+      "gevent": true,
+      "justMyCode": false
+    },
+    {
+      "name": "Basic Switch",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "exec.py",
+      "console": "integratedTerminal",
+      "args": "allow_block_ryu_controller.py",
+      "gevent": true,
+      "justMyCode": false
+    },
   ]
 }

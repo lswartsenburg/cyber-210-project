@@ -13,6 +13,12 @@ develop-eggs/
 dist/
 newenv/
 downloads/
+bin/
+logs/
+share/
+spool/
+etc/
+include/
 eggs/
 .eggs/
 lib/
